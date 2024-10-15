@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ParentComponent } from './parent/parent.component';
+import { NgInitDemoComponent } from './ng-init-demo/ng-init-demo.component';
 
-const routes: Routes = [];
-
+const routes: Routes = [
+  { path: 'onchange', component: ParentComponent },
+  { path: 'oninit', component: NgInitDemoComponent },
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
