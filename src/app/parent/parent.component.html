@@ -1,3 +1,6 @@
 <p>parent works!</p>
-<app-child [sendChild]="sendChild" [sendChild2]= "sendChild2"></app-child>
 <button (click)="increseCount()">Increment</button>
+<app-child [sendChild]="sendChild" [sendChild2]= "sendChild2">
+  <p  #header>This is projected content</p>
+</app-child>
+<div #innerparent>This is inner content parent</div>

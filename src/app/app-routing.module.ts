@@ -5,7 +5,7 @@ import { NgInitDemoComponent } from './ng-init-demo/ng-init-demo.component';
 
 const routes: Routes = [
   { path: 'onchange', component: ParentComponent },
-  { path: 'oninit', component: NgInitDemoComponent },
+  { path: 'ondocheck', component: NgInitDemoComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
