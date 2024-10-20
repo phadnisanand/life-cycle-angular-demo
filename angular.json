@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "lifecycledemo:build:production"
+              "browserTarget": "lifecycledemo:build:production",
             },
             "development": {
-              "browserTarget": "lifecycledemo:build:development"
+              "browserTarget": "lifecycledemo:build:development",
             }
           },
           "defaultConfiguration": "development"

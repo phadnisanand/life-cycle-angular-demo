@@ -1,5 +1,7 @@
 <p>ng-init-demo works!</p>
  <h1>Posts</h1>
-<ul>
-  <li *ngFor="let post of posts">{{ post.title }}</li>
-</ul>
+<div *ngFor="let prop of posts | keyvalue">
+    <ul>
+      <li *ngFor='let i of prop.value'> {{i.title}} --- {{i.body}}  </li>
+    </ul>
+</div>

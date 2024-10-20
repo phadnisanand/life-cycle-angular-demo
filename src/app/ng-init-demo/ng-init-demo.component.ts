@@ -14,15 +14,9 @@ export class NgInitDemoComponent implements OnInit, OnDestroy {
 
   constructor(private dataService: DataServiceService) {}
   ngOnInit(): void {
-    // this.dataService.getPosts().subscribe(
-    //   data => this.posts = data,
-    //   error => console.error(error),
-    //   () => console.log('Posts loaded')
-    // );
      this.dataSubscription = this.dataService.getPosts().subscribe(data => {
        this.posts = data;
     });
-
   }
 
   ngOnDestroy(): void {
